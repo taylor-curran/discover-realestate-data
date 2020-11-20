@@ -6,12 +6,12 @@ import json
 # Load API Keys
 load_dotenv()
 X_RAPID_API_KEY=os.getenv("X_RAPID_API_KEY")
-X_RAPID_API_HOST=os.getenv("X_RAPID_API_HOST")
+X_RAPID_API_HOST_MASHVISOR=os.getenv("X_RAPID_API_HOST_MASHVISOR")
 
 
 headers = {
     'x-rapidapi-key': X_RAPID_API_KEY,
-    'x-rapidapi-host': X_RAPID_API_HOST
+    'x-rapidapi-host': X_RAPID_API_HOST_MASHVISOR
     }
 
 url_beginning = "https://mashvisor-api.p.rapidapi.com"
@@ -27,11 +27,11 @@ querystring = {
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
-json = response.json()
+json_response = response.json()
 
 import pandas as pd
 
-df = pd.DataFrame(json['content']['properties'])
+df = pd.DataFrame(json_response['content']['properties'])
 
 print("Shape:", df.shape)
 print("Columns:", df.columns)
