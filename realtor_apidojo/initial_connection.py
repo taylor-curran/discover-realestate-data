@@ -5,8 +5,8 @@ import json
 
 # Load API Keys
 load_dotenv()
-X_RAPID_API_KEY=os.getenv("X_RAPID_API_KEY")
-X_RAPID_API_HOST_DOJO=os.getenv("X_RAPID_API_HOST_DOJO")
+X_RAPID_API_KEY = os.getenv("X_RAPID_API_KEY")
+X_RAPID_API_HOST_DOJO = os.getenv("X_RAPID_API_HOST_DOJO")
 
 headers = {
     'x-rapidapi-key': X_RAPID_API_KEY,

@@ -5,8 +5,8 @@ import json
 
 # Load API Keys
 load_dotenv()
-X_RAPID_API_KEY=os.getenv("X_RAPID_API_KEY")
-X_RAPID_API_HOST_MASHVISOR=os.getenv("X_RAPID_API_HOST_MASHVISOR")
+X_RAPID_API_KEY = os.getenv("X_RAPID_API_KEY")
+X_RAPID_API_HOST_MASHVISOR = os.getenv("X_RAPID_API_HOST_MASHVISOR")
 
 
 headers = {

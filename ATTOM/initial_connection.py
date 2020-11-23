@@ -7,7 +7,7 @@ from xml.etree import ElementTree
 # Load API Keys
 load_dotenv()
 
-ATTOM_API_KEY=os.getenv('ATTOM_API_KEY')
+ATTOM_API_KEY = os.getenv('ATTOM_API_KEY')
 
 url = "http://api.gateway.attomdata.com/propertyapi/v1.0.0/property/detail?"
 
