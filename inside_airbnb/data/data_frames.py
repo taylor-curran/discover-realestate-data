@@ -21,3 +21,35 @@ ottawa_rvs = pd.read_csv('data/Ottawa/reviews.csv')
 # Salem, OR
 salem_lst = pd.read_csv('data/Salem_OR/listings.csv')
 salem_rvs = pd.read_csv('data/Salem_OR/reviews.csv')
+
+all_dfs = [ashville_lst, ashville_rvs, 
+           austin_lst, austin_rvs, 
+           broward_lst, broward_rvs, 
+           clark_lst, clark_rvs, 
+           nashville_lst, nashville_rvs, 
+           ottawa_lst, ottawa_rvs, 
+           salem_lst, salem_rvs]
+
+all_df_names = ['ashville_lst', 'ashville_rvs', 
+                'austin_lst', 'austin_rvs', 
+                'broward_lst', 'broward_rvs', 
+                'clark_lst', 'clark_rvs', 
+                'nashville_lst', 'nashville_rvs', 
+                'ottawa_lst', 'ottawa_rvs', 
+                'salem_lst', 'salem_rvs']
+
+rvs_dfs = [ashville_rvs, 
+           austin_rvs, 
+           broward_rvs, 
+           clark_rvs, 
+           nashville_rvs, 
+           ottawa_rvs, 
+           salem_rvs]
+
+rvs_names = ['ashville_rvs',
+             'austin_rvs',
+             'broward_rvs',
+             'clark_rvs',
+             'nashville_rvs', 
+             'ottawa_rvs',
+             'salem_rvs']
